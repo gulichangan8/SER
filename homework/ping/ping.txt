@@ -1,0 +1,18 @@
+PING mynginx2 (172.19.0.3) 56(84) bytes of data.
+64 bytes from mynginx2.homework_mynetwork (172.19.0.3): icmp_seq=1 ttl=64 time=54.8 ms
+PING mynginx1 (172.19.0.2) 56(84) bytes of data.
+64 bytes from mynginx1.homework_mynetwork (172.19.0.2): icmp_seq=1 ttl=64 time=0.131 ms
+64 bytes from mynginx2.homework_mynetwork (172.19.0.3): icmp_seq=2 ttl=64 time=0.070 ms
+64 bytes from mynginx1.homework_mynetwork (172.19.0.2): icmp_seq=2 ttl=64 time=0.087 ms
+64 bytes from mynginx2.homework_mynetwork (172.19.0.3): icmp_seq=3 ttl=64 time=0.069 ms
+64 bytes from mynginx1.homework_mynetwork (172.19.0.2): icmp_seq=3 ttl=64 time=0.078 ms
+64 bytes from mynginx2.homework_mynetwork (172.19.0.3): icmp_seq=4 ttl=64 time=0.069 ms
+64 bytes from mynginx1.homework_mynetwork (172.19.0.2): icmp_seq=4 ttl=64 time=0.081 ms
+
+--- mynginx2 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3037ms
+rtt min/avg/max/mdev = 0.069/13.757/54.822/23.708 ms
+
+--- mynginx1 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3046ms
+rtt min/avg/max/mdev = 0.078/0.094/0.131/0.021 ms

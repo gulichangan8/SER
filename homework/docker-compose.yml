@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  ping1:
+    container_name: mynginx1
+    image: test1
+    ports:
+      - 8000:80
+    working_dir: /homework
+    command: sh -c 'ping -w 4 mynginx2>>/homework/ping.txt'
+    networks:
+      - mynetwork
+    volumes:
+      - ./ping:/homework
+    tty: true
+  ping2:
+    container_name: mynginx2
+    image: test2
+    ports:
+      - 8001:80
+    working_dir: /homework
+    command: sh -c 'ping -w 4 mynginx1>>/homework/ping.txt'
+    networks: 
+      - mynetwork
+    volumes:
+      - ./ping:/homework
+    tty: true
+networks:
+  mynetwork:
+    driver: bridge

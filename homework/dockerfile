@@ -1,0 +1,5 @@
+From nginx
+WORKDIR /homework
+COPY . .
+RUN apt-get update
+RUN apt install -y iputils-ping
